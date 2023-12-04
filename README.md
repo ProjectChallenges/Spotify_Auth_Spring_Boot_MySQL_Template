@@ -182,5 +182,21 @@ public class AuthorizationDemoApplication {
     }
 }
 ```
+# Simple Response Body example with no nested Arrays
+```json
+[
+    {
+        "id": "37i9dQZEVXbJiZcmkrIHGU",
+        "collaborative": false,
+        "description": "Dein tägliches Update zu den aktuell am häufigsten gespielten Songs – Deutschland.",
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXbJiZcmkrIHGU",
+        "name": "Top 50 – Deutschland",
+        "snapshot_id": "NzU0OTkzMjAwLDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDY0NjU=",
+        "status": false,
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZEVXbJiZcmkrIHGU"
+    }
+]
+```
 
 These code snippets provide a concise representation of the key functionalities in each component. Make sure to refer to the full source code for a comprehensive understanding of the implementation details.
