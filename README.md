@@ -29,30 +29,18 @@ The MySQL database schema includes two tables: `spotify` for storing access toke
 
 ```sql
 -- Create database if not exists
-CREATE DATABASE IF NOT EXISTS spoti_api_js_php_playlist;
+CREATE DATABASE IF NOT EXISTS spoti_api;
 
-USE spoti_api_js_php_playlist;
+USE spoti_api;
 
 -- Table for storing Spotify access tokens
-CREATE TABLE IF NOT EXISTS spotify (
+CREATE TABLE IF NOT EXISTS spotify_token (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT,
     access_token VARCHAR(255) NOT NULL,
     expires_at TIMESTAMP NOT NULL
 );
 
--- Table for managing playlists
-CREATE TABLE IF NOT EXISTS playlist (
-    collaborative BOOLEAN,
-    description TEXT,
-    playlist_href VARCHAR(255),
-    playlist_name VARCHAR(255),
-    snapshot_id VARCHAR(255),
-    public BOOLEAN,
-    type VARCHAR(255),
-    uri VARCHAR(255),
-    playlist_id VARCHAR(255) NOT NULL PRIMARY KEY
-);
 ```
 
 ## How to Use the Application
@@ -66,7 +54,7 @@ cd authorizationDemo
 
 ### 2. Set up MySQL Database
 
-- Create a MySQL database named `spoti_api_js_php_playlist`.
+- Create a MySQL database named `spoti_api`.
 - Adjust database connection properties in `src/main/resources/application.properties`.
 
 ### 3. Set up Spotify API Credentials
