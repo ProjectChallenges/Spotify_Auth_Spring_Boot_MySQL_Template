@@ -25,7 +25,7 @@ The project follows the Model-View-Controller (MVC) architecture. Here's a brief
 
 ## Database Schema
 
-The MySQL database schema includes two tables: `spotify` for storing access tokens and `playlist` for managing playlists.
+The MySQL database schema includes two tables: `spotify` for storing access tokens.
 
 ```sql
 -- Create database if not exists
